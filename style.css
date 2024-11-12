@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #2b2a2a;
+    background: linear-gradient(135deg, #1f1f1f, #3d3d3d);
     color: #e5e5e5;
     display: flex;
     flex-direction: column;
@@ -18,41 +18,56 @@ body {
 /* Top Navigation Bar Styling */
 .top-bar {
     width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+    background: linear-gradient(90deg, #333, #444);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
 .top-bar .logo {
     color: #ffd700;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 20px;
     text-decoration: none;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    margin-right: 20px;
+    gap: 20px;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    display: inline;
 }
 
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #ffd700;
+}
+
+/* Invite Button Styling */
+.invite-button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #d9534f, #b03a2e);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.invite-button:hover {
+    background: linear-gradient(45deg, #b03a2e, #d9534f);
+    transform: scale(1.05);
 }
 
 /* Main Container Styling */
@@ -62,6 +77,9 @@ body {
     max-width: 600px;
     padding: 20px;
     margin-top: 20px;
+    background: linear-gradient(145deg, #2c2c2c, #3a3a3a);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Header Animation */
@@ -78,27 +96,7 @@ body {
     animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Invite Button Styling with Animation */
-.invite-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0;
-    background-color: #d9534f;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: pulse 1.5s infinite;
-}
-
-.invite-button:hover {
-    background-color: #b03a2e;
-    transform: scale(1.05);
-}
-
-/* Command List Styling with Animation */
+/* Command List Styling */
 .animated-list {
     margin: 20px 0;
     display: flex;
@@ -108,16 +106,16 @@ body {
 }
 
 .command {
-    background-color: #333;
+    background: linear-gradient(135deg, #444, #555);
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
     color: #ffd700;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .command:hover {
-    background-color: #444;
+    background: linear-gradient(135deg, #555, #666);
 }
 
 /* Keyframe Animations */
@@ -140,15 +138,6 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
     }
 }
 
