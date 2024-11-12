@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBRN Bot Commands - Documentation</title>
+    <title>CBRN Bot Documentation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,25 +14,44 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="docs.html">Docs</a></li>
-            <li><a href="YOUR_INVITE_LINK_HERE" class="invite-button">Invite Bot</a></li>
         </ul>
+        <a href="YOUR_INVITE_LINK_HERE" class="invite-button">Invite Bot</a>
     </nav>
 
-    <!-- Documentation Content -->
-    <div class="container">
-        <h1 class="animated-header">Command Documentation</h1>
-        <p class="animated-text">Here’s a comprehensive list of commands for CBRN Bot:</p>
+    <!-- Main Content with Sidebar -->
+    <div class="docs-container">
+        <aside class="sidebar">
+            <h3>Commands</h3>
+            <ul>
+                <li><a href="#hazmat">!hazmat</a></li>
+                <li><a href="#alert">!alert</a></li>
+                <li><a href="#safety">!safety</a></li>
+                <li><a href="#evacuate">!evacuate</a></li>
+                <!-- Add more commands as needed -->
+            </ul>
+        </aside>
+        
+        <main class="docs-content">
+            <section id="hazmat">
+                <h2>!hazmat</h2>
+                <p>Provides CBRN hazard guidelines for users in potentially dangerous environments.</p>
+            </section>
 
-        <div class="command-list animated-list">
-            <div class="command">!hazmat - Provides guidelines for handling hazardous materials.</div>
-            <div class="command">!alert - Issues an emergency alert to all channels.</div>
-            <div class="command">!safety [type] - Safety advice based on CBRN type (e.g., chemical, biological).</div>
-            <div class="command">!evacuate - Provides evacuation procedures for CBRN incidents.</div>
-            <div class="command">!status - Displays bot’s operational status and current alerts.</div>
-            <div class="command">!decontaminate - Guidelines for decontamination procedures.</div>
-            <div class="command">!report [incident] - Logs and reports a new CBRN incident.</div>
-        </div>
+            <section id="alert">
+                <h2>!alert</h2>
+                <p>Issues an emergency alert that is sent to all active channels.</p>
+            </section>
+
+            <section id="safety">
+                <h2>!safety [type]</h2>
+                <p>Offers safety advice for various CBRN incident types, based on user input.</p>
+            </section>
+
+            <section id="evacuate">
+                <h2>!evacuate</h2>
+                <p>Sends evacuation instructions to ensure safety during hazardous situations.</p>
+            </section>
+        </main>
     </div>
-
 </body>
 </html>
