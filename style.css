@@ -8,16 +8,14 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a); /* Slightly adjusted for a smoother effect */
     color: #e5e5e5;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh; /* Ensure the gradient covers full height */
 }
 
-.Gradient-thing {
-background: linear-gradient(black, yellow);
-}
 /* Top Navigation Bar Styling */
 .top-bar {
     width: 100%;
@@ -80,74 +78,14 @@ background: linear-gradient(black, yellow);
     max-width: 600px;
     padding: 20px;
     margin-top: 20px;
-    background: linear-gradient(145deg, #2c2c2c, #3a3a3a);
+    background: linear-gradient(145deg, #2c2c2c, #3a3a3a); /* Softer background gradient */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Docs Page Container Styling */
-.docs-container {
-    display: flex;
-    width: 90%;
-    max-width: 900px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Sidebar Styling */
-.sidebar {
-    width: 25%;
-    padding: 15px;
-    background: linear-gradient(145deg, #2c2c2c, #4c4c4c);
-    border-radius: 8px;
-    margin-right: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.sidebar h3 {
-    color: #ffd700;
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-}
-
-.sidebar ul li a {
-    color: #e5e5e5;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-    color: #ffd700;
-}
-
-/* Docs Content Styling */
-.docs-content {
-    width: 75%;
-    background: #3d3d3d;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Header and Command List Styling */
-.animated-header {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #ffd700;
-    animation: fadeInDown 2s ease-in-out;
-}
-
-.animated-text {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    animation: fadeInUp 1.5s ease-in-out;
-}
-
+/* Command List Styling */
 .command-list .command {
-    background: linear-gradient(135deg, #444, #555);
+    background: linear-gradient(135deg, #555, #666); /* Improved gradient contrast */
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
@@ -156,7 +94,7 @@ background: linear-gradient(black, yellow);
 }
 
 .command:hover {
-    background: linear-gradient(135deg, #555, #666);
+    background: linear-gradient(135deg, #666, #777); /* Slight contrast change on hover */
 }
 
 /* Animations */
@@ -174,3 +112,10 @@ background: linear-gradient(black, yellow);
 @keyframes fadeInUp {
     from {
         opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
