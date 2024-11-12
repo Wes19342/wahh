@@ -15,6 +15,9 @@ body {
     align-items: center;
 }
 
+.Gradient-thing {
+background: linear-gradient(black, yellow);
+}
 /* Top Navigation Bar Styling */
 .top-bar {
     width: 100%;
